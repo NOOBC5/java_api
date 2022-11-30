@@ -13,12 +13,12 @@ public class ExLocalDateTime{
 		LocalDateTime current = LocalDateTime.now();
 
 		// 년 월 일을 따로 분류시켜주는 자바에서 기본으로 주는 ISO_DATE Formatter사용
-		DateTimeFormatter todatFormatter = DateTimeFormatter.ISO_DATE;
+		DateTimeFormatter todayFormatter = DateTimeFormatter.ISO_DATE;
 		// 시 분 초를 나타내는 Formatter 생성
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH시 mm분 ss초");
 	
 		// LocalDateTime으로 만든 current에서 년 월 일만 따로 분리해주는 코드
-		String today = current.format(todatFormatter);
+		String today = current.format(todayFormatter);
 		// LocalDateTime으로 만든 current에서 시 분 초만 따로 분리해주는 코드
 		String time = current.format(formatter);
 
