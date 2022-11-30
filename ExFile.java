@@ -28,7 +28,7 @@ public class ExFile{
 		String Month = current.format(monthFormatter);
 
 		String path = "C:\\Users\\khjkh\\Documents\\cnai\\study\\"+Month;
-		String createLogCreateFolderPath = "C:\\Users\\khjkh\\Documents\\cnai\\study\\"+Month+"\\"+today+".log";
+		String createLogFolderPath = "C:\\Users\\khjkh\\Documents\\cnai\\study\\"+Month+"\\"+today+".log";
 
 		//File위치를 받아와 Folder변수에 넣기
 		File Folder = new File(path);
@@ -41,7 +41,7 @@ public class ExFile{
 					//폴더 생성 코드
 					Folder.mkdir();
 
-					pw = new PrintWriter(new FileWriter(createLogCreateFolderPath));
+					pw = new PrintWriter(new FileWriter(createLogFolderPath));
 					pw.println("Hello World!");
 			
 					pw.append("+ ");
@@ -54,7 +54,7 @@ public class ExFile{
 					e.getStackTrace();
 				}
 				}else{
-			pw = new PrintWriter(new FileWriter(createLogCreateFolderPath));
+			pw = new PrintWriter(new FileWriter(createLogFolderPath));
 			pw.println("Hello World!");
 			
 			pw.append("+ ");
