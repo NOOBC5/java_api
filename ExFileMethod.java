@@ -6,7 +6,6 @@ import java.time.format.DateTimeFormatter;
 import java.time.LocalDateTime;
 import java.io.File;
 import java.util.Scanner;
-import java.text.ParseException;
 
 public class ExFileMethod{
 	
